@@ -51,9 +51,8 @@ Backups are stored in a specified directory, rotated to maintain a specified num
   ```
 
   This example schedules the script to run every week (`0 0 * * 0`), which means at 00:00 (midnight) on Sunday (`0` represents Sunday in the cron syntax).
-```
 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-```
+
