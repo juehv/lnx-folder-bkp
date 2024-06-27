@@ -1,0 +1,22 @@
+# Ignore system and editor-specific files
+*~
+*.swp
+.DS_Store
+
+# Ignore backup files (assuming they might be stored locally during development)
+*.tgz
+
+# Ignore temporary directories
+/tmp/
+.temp/
+.temp-*
+
+# Ignore any generated files or directories
+/output/
+/dist/
+
+# Ignore any sensitive or environment-specific information
+.env
+
+# Ignore any personal customization files
+.config/
