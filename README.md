@@ -22,7 +22,7 @@ Backups are stored in a specified directory, rotated to maintain a specified num
 2. **Make the script executable:**
 
    ```bash
-   chmod +x backup_opt.sh
+   chmod +x bbackup-folder.sh
    ```
 
 3. **Install required dependencies:**
@@ -32,14 +32,14 @@ Backups are stored in a specified directory, rotated to maintain a specified num
 
 4. **Adjust configuration:**
 
-   - Modify `SOURCE_DIR`, `SNAPSHOT_DIR`, `BACKUP_DIR`, and `NUM_BACKUPS` variables in `backup_opt.sh` as per your requirements.
+   - Modify `SOURCE_DIR`, `SNAPSHOT_DIR`, `BACKUP_DIR`, and `NUM_BACKUPS` variables in `backup-folder.sh` as per your requirements.
 
 ## Usage
 
 - Run the script as root:
 
   ```bash
-  sudo ./backup_script.sh
+  sudo ./backup-folder.sh
   ```
 
 - **Automated Backup Setup (Cron Job)**:
@@ -47,7 +47,7 @@ Backups are stored in a specified directory, rotated to maintain a specified num
   Add the following line to your crontab (`crontab -e`) to run the backup script every Sunday at midnight:
 
   ```cron
-  0 0 * * 0 /path/to/backup_script.sh
+  0 0 * * 0 /path/to/backup-folder.sh
   ```
 
   This example schedules the script to run every week (`0 0 * * 0`), which means at 00:00 (midnight) on Sunday (`0` represents Sunday in the cron syntax).
