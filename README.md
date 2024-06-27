@@ -39,7 +39,7 @@ Backups are stored in a specified directory, rotated to maintain a specified num
 - Run the script as root:
 
   ```bash
-  sudo ./backup_opt.sh
+  sudo ./backup_script.sh
   ```
 
 - **Automated Backup Setup (Cron Job)**:
@@ -47,7 +47,7 @@ Backups are stored in a specified directory, rotated to maintain a specified num
   Add the following line to your crontab (`crontab -e`) to run the backup script every Sunday at midnight:
 
   ```cron
-  0 0 * * 0 /path/to/backup_opt.sh
+  0 0 * * 0 /path/to/backup_script.sh
   ```
 
   This example schedules the script to run every week (`0 0 * * 0`), which means at 00:00 (midnight) on Sunday (`0` represents Sunday in the cron syntax).
