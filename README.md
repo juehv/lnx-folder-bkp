@@ -3,6 +3,8 @@
 **Very** simple scipt to backup a snapshot of a folder in linux. It retains user permission and ownership. 
 Backups are stored in a specified directory, rotated to maintain a specified number of instances, and named according to the date of the backup.
 
+If you are locking for a solid backup script, try this --> http://www.mikerubel.org/computers/rsync_snapshots/
+
 ## Features
 
 - Creates compressed backups (`*.tgz`).
